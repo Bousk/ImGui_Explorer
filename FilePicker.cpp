@@ -38,7 +38,7 @@ void FilePicker::Update()
 				bool clicked = false;
 				if (icon.getSize().x && icon.getSize().y)
 				{
-					const ImTextureID imTex = SFML::GLHandleToImTexture(icon.getNativeHandle());
+					const ImTextureID imTex = ImGuiSFML::GLHandleToImTexture(icon.getNativeHandle());
 					clicked |= ImGui::ImageButton(imTex, ImVec2(16, 16));
 					ImGui::SameLine();
 				}

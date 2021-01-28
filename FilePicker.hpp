@@ -5,7 +5,7 @@
 #include <filesystem>
 #include <functional>
 
-class FilePicker : public Singleton<FilePicker>
+class FilePicker
 {
 public:
 	using OnPicked = std::function<void(const std::filesystem::path&)>;
